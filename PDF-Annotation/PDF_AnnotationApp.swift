@@ -11,7 +11,8 @@ import SwiftUI
 struct PDF_AnnotationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            PDFView()
         }
     }
 }

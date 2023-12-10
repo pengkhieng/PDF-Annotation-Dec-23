@@ -14,6 +14,12 @@
 		15A34AD62B24D6AE00573B80 /* PDF_AnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AD52B24D6AE00573B80 /* PDF_AnnotationTests.swift */; };
 		15A34AE02B24D6AE00573B80 /* PDF_AnnotationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34ADF2B24D6AE00573B80 /* PDF_AnnotationUITests.swift */; };
 		15A34AE22B24D6AE00573B80 /* PDF_AnnotationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AE12B24D6AE00573B80 /* PDF_AnnotationUITestsLaunchTests.swift */; };
+		15A34AF42B24D78300573B80 /* PDF_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AF32B24D78300573B80 /* PDF_View.swift */; };
+		15A34AF72B24D85200573B80 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AF62B24D85200573B80 /* PDFViewModel.swift */; };
+		15A34AF92B24D96C00573B80 /* PDFPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AF82B24D96C00573B80 /* PDFPreviewWrapper.swift */; };
+		15A34AFB2B24D9C300573B80 /* PDF_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AFA2B24D9C300573B80 /* PDF_Model.swift */; };
+		15A34AFE2B24DACA00573B80 /* AppSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AFD2B24DACA00573B80 /* AppSpacing.swift */; };
+		15A34B002B24DAED00573B80 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A34AFF2B24DAED00573B80 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		15A34ADB2B24D6AE00573B80 /* PDF-AnnotationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PDF-AnnotationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A34ADF2B24D6AE00573B80 /* PDF_AnnotationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_AnnotationUITests.swift; sourceTree = "<group>"; };
 		15A34AE12B24D6AE00573B80 /* PDF_AnnotationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_AnnotationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15A34AF32B24D78300573B80 /* PDF_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_View.swift; sourceTree = "<group>"; };
+		15A34AF62B24D85200573B80 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
+		15A34AF82B24D96C00573B80 /* PDFPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewWrapper.swift; sourceTree = "<group>"; };
+		15A34AFA2B24D9C300573B80 /* PDF_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_Model.swift; sourceTree = "<group>"; };
+		15A34AFD2B24DACA00573B80 /* AppSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpacing.swift; sourceTree = "<group>"; };
+		15A34AFF2B24DAED00573B80 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,11 @@
 		15A34AC32B24D6AC00573B80 /* PDF-Annotation */ = {
 			isa = PBXGroup;
 			children = (
+				15A34AFC2B24DA8800573B80 /* Config */,
+				15A34AF02B24D6E800573B80 /* Models */,
+				15A34AEF2B24D6D500573B80 /* ViewModels */,
+				15A34AEE2B24D6C600573B80 /* Views */,
 				15A34AC42B24D6AC00573B80 /* PDF_AnnotationApp.swift */,
-				15A34AC62B24D6AC00573B80 /* ContentView.swift */,
 				15A34AC82B24D6AE00573B80 /* Assets.xcassets */,
 				15A34ACA2B24D6AE00573B80 /* Preview Content */,
 			);
@@ -125,6 +140,65 @@
 				15A34AE12B24D6AE00573B80 /* PDF_AnnotationUITestsLaunchTests.swift */,
 			);
 			path = "PDF-AnnotationUITests";
+			sourceTree = "<group>";
+		};
+		15A34AEE2B24D6C600573B80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AF22B24D73000573B80 /* PDF_View */,
+				15A34AF12B24D71300573B80 /* ContentView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15A34AEF2B24D6D500573B80 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AF52B24D83900573B80 /* PDF_ViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		15A34AF02B24D6E800573B80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AFA2B24D9C300573B80 /* PDF_Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15A34AF12B24D71300573B80 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AC62B24D6AC00573B80 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		15A34AF22B24D73000573B80 /* PDF_View */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AF32B24D78300573B80 /* PDF_View.swift */,
+			);
+			path = PDF_View;
+			sourceTree = "<group>";
+		};
+		15A34AF52B24D83900573B80 /* PDF_ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AF62B24D85200573B80 /* PDFViewModel.swift */,
+				15A34AF82B24D96C00573B80 /* PDFPreviewWrapper.swift */,
+			);
+			path = PDF_ViewModel;
+			sourceTree = "<group>";
+		};
+		15A34AFC2B24DA8800573B80 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				15A34AFD2B24DACA00573B80 /* AppSpacing.swift */,
+				15A34AFF2B24DAED00573B80 /* AppColors.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A34AFB2B24D9C300573B80 /* PDF_Model.swift in Sources */,
+				15A34AF72B24D85200573B80 /* PDFViewModel.swift in Sources */,
 				15A34AC72B24D6AC00573B80 /* ContentView.swift in Sources */,
+				15A34AFE2B24DACA00573B80 /* AppSpacing.swift in Sources */,
 				15A34AC52B24D6AC00573B80 /* PDF_AnnotationApp.swift in Sources */,
+				15A34B002B24DAED00573B80 /* AppColors.swift in Sources */,
+				15A34AF92B24D96C00573B80 /* PDFPreviewWrapper.swift in Sources */,
+				15A34AF42B24D78300573B80 /* PDF_View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
